@@ -1,11 +1,11 @@
 #!/bin/bash
 # install git bash
 
-username=YourUserNameHere
+gitUsername=YourUserNameHere
 gitEmail=YourEmailHere
 
 echo "update package index"
-sudo apt update
+#sudo apt update
 
 echo "install git"
 sudo apt install git
@@ -17,7 +17,7 @@ echo "git install script done"
 
 echo "set com global values"
 echo "set username"
-git config --global user.name $username --replace-all
+git config --global user.name $gitUsername --replace-all
 echo "set email"
 git config --global user.email $gitEmail
 echo "check global settings"
