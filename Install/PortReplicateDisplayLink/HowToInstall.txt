@@ -1,0 +1,7 @@
+Assume the file is called some-app.run and is in the folder /home/user/Downloads. You will need to modify these instructions to fit your situation.
+
+1.Open a terminal (Applications->Accessories->Terminal).
+2.enter cd /home/user/Downloads
+3.enter chmod +x some-app.run
+4.enter ./some-app.run
+5.if step 4 fails with a message including 'permission denied', try entering sudo ./some-app.run (you will need to enter your password for this).
