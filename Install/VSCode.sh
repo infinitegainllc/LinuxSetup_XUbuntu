@@ -2,14 +2,14 @@
 
 echo "install VScode"
 echo "update packages"
-sudo apt update
+#sudo apt update
 sudo apt install software-properties-common apt-transport-https wget
 echo "import the Microsoft GPG key using the following wget command"
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 echo "enable the Visual Studio Code repository"
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 echo "Once the apt repository is enabled , install the latest version of Visual Studio Code"
-sudo apt update
+#sudo apt update
 sudo apt install code
 
 echo "list installed vscode extensions that can be copied and ran from terminal to install somewhere else"
@@ -28,5 +28,5 @@ code --install-extension donjayamanne.githistory
 
 
 echo "upgrade VSCode"
-sudo apt update
-sudo apt upgrade
+#sudo apt update
+#sudo apt upgrade
